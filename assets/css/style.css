@@ -239,7 +239,7 @@ header{
 .projectgrid1,.projectgrid2{
     display: flex;
     justify-content: space-between;
-    gap: 35rem;
+    gap: 5vw;
     height: 100vh;
     margin-bottom: 80rem;
 }
@@ -512,4 +512,28 @@ header{
     opacity: 1;
     border-radius: 20px;
     box-shadow:  16px 14px 48px #00000069;
+}
+.imgtooltip {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    opacity:0 ;
+    background: #262626;
+    position: absolute;
+    z-index: 1000;
+    width:200px;
+    height:200px;
+    border-radius: 100px;
+    font-size: 3rem;
+    font-family: euclidb;
+    color: var(--txtcolor);
+    transition: all 0.1s linear;
+    transform: scale(0);
+}
+.projectgrid1 div:hover .imgtooltip,.projectgrid2 div:hover .imgtooltip {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    cursor: pointer;
 }

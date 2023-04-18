@@ -13,3 +13,32 @@ window.addEventListener('scroll', function(event) { // To listen for event
         nav.style.height = '80px';
     }
 });
+var tooltip = document.querySelectorAll('.imgtooltip');
+
+document.addEventListener('mousemove', fn, false);
+
+function fn(e) {
+    for (var i=tooltip.length; i--;) {
+        tooltip[i].style.left = e.pageX + 'px';
+        tooltip[i].style.top = e.pageY + 'px';
+    }
+}
+window.addEventListener('scroll', throttle(parallax, 14));
+
+function throttle(fn, wait) {
+  var time = Date.now();
+  return function() {
+    if ((time + wait - Date.now()) < 0) {
+      fn();
+      time = Date.now();
+    }
+  }
+};
+
+function parallax() {
+  var scrolled = window.pageYOffset;
+  var parallax = document.querySelector("#parallax");
+  // You can adjust the 0.4 to change the speed
+	var coords = (scrolled * .15) + 'px'
+  parallax.style.transform = 'translateY(' + coords + ')';
+};
