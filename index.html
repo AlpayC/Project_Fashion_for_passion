@@ -7,17 +7,19 @@
     <title>Fashion for Passion</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+    <script>
+        $("#nav").scrollspy({ offset: -75 });
+    </script>
 </head>
 <body>
-<header>
+<header id="home">
     <nav>
         <a href="#"><img src="./assets/img/6.png" alt="Logo"></a>
-        <div class="menu-block">
-            <a href="">HOME</a>
-            <a href="">ABOUT</a>
-            <a href="">WORK</a>
-            <a href="">SERVICE</a>
+        <div class="menu-block" id="nav">
+            <a class="homenav" href="#home">HOME</a>
+            <a class="aboutnav" href="#about">ABOUT</a>
+            <a class="worknav"  href="#work">WORK</a>
+            <a class="servicenav" href="#service">SERVICE</a>
             <a href="">BLOG</a>
             <a href="">AWARD</a>
             <a href="">CONTACT</a>
@@ -62,14 +64,14 @@
         </section>
 </header>
 <main>
-    <section class="about">
+    <section id="about" class="about">
         <article class="aboutcontent">
             <h2>Fashion for passion & life style</h2>
             <p>We formulate intentionally crafted supplements for thoughtful people like you – using only the highest quality ingredients at effective doses. Empowering you to take control of your wellness, look and feel great, and live a life brimming with energy.</p>
             <a href="">Check My Works</a>
         </article>
     </section>
-    <section class="works">
+    <section id="work" class="works">
         <h2>Selected works</h2>
         <article class="workcontent">
             <div class="borderline">
@@ -103,7 +105,7 @@
             <div>Let's Talk</div>
         </article>
     </section>
-    <section class="service">
+    <section id="service" class="service">
          <article class="leftimagecontainer">
          </article>
          <article class="servicecolumn">
@@ -143,11 +145,119 @@
          <article class="rightimagecontainer">
          </article>
     </section>
+    <section id="blog" class="blog">
+        <h2>My Blogs</h2>
+        <article class="blogcontent">
+            <div class="borderline">
+                <div></div>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+                </p>
+            </div>
+            <a href="">View All Blogs</a>
+        </article>
+        <section class="blogcarousel">
+            <article>
+                <h3 class="bloganim1">Why Successful People Wear The Same Thing Every Day.</h3>
+                <p class="bloganim1"> <span>Marketing, </span> Oct 24, 2022</p>
+                <div class="bloganim2">
+                    <img src="./assets/img/7.jpeg" alt="">
+                </div>
+            </article>
+            <article>
+                <h3 class="bloganim1">The Quickest Way to Deliver Your Message? Make It Visual.</h3>
+                <p class="bloganim1"><span>UI Design, </span>Oct 24, 2022</p>
+                <div class="bloganim2">
+                    <img src="./assets/img/8.jpeg" alt="">
+                </div>
+            </article>
+            <article>
+                <h3 class="bloganim1" >The Easiest Way to Become a Successful Writer and Authors.</h3>
+                <p class="bloganim1" ><span> Marketing, </span>Oct 24, 2022</p>
+                <div class="bloganim2">
+                    <img src="./assets/img/9.jpeg" alt="">
+                </div>
+            </article>
+        </section>
+    </section>
+    <section class="sparkleanimation">
+        <article class="sparkletxt">
+            <h2>DIVINE BEAUTY</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Design is the art of applying design, aesthetics, clothing and natural beauty to clothing with its accessories.
+            </p>
+        </article>
+    </section>
+    <section class="nominated">
+        <h2>Nominated as fashion designer of the year worldwide.
+        </h2>
+        <article class="nominatedcontent">
+            <div class="borderline">
+                <div></div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m passionate about doing the best digital innovation we can and pushing nontechnology to its limits. And I achieve results we're proud of. We work with purpose-driven companies to take brave ideas to market.
+
+                </p>
+            </div>
+            <div class="awardbox">
+                <img src="./assets/img/12.png" alt="">
+                <div>
+                    <p>01x Developer Award</p>
+                    <p>Winner</p>
+                </div>
+            </div>
+            <article class="contactbottomcontent">
+                <div>
+                    <p>Contact</p>
+                </div>
+                <div></div>
+                <div></div>
+            </article>
+    </section>
+    <section class="contact">
+        <article>
+        </article>
+        <article class="contactcontainer">
+            <h2>
+                Let’s work on something great together   
+            </h2>
+            <a href="">Let's Talk</a>    
+        </article>
+    </section>
 </main>
 <footer>
-
+    <section class="footerbox">
+        <a href="#"><img src="./assets/img/6.png" alt=""></a>
+        <article>
+            <a href="">Main Page</a>
+            <a href="">Licensing</a>
+            <a href="">Style Guide</a>
+            <a href="">404 Page</a>
+        </article>
+        <article>
+            <a href="">Works</a>
+            <a href="">Changelog</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+        </article>
+        <article>
+            <div>
+                <a href="">Fb</a>
+                <a href="">Tw</a>
+                <a href="">In</a>
+                <a href="">Db</a>
+                <a href="">Be</a>
+            </div>
+            <div></div>
+            <p>Powered by <span>Webflow</span></p>
+        </article>
+        <article>
+            <form>
+                <input placeholder="Your Email"  type="email">
+                <input type="submit" value="Submit">
+            </form>
+        </article>
+    </section>
 </footer>
 <script src="./assets/js/app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://rawgit.com/r3plica/Scrollspy/master/scrollspy.js"></script>
 </body>
 </html>
